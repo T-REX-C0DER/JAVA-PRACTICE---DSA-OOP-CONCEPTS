@@ -211,41 +211,41 @@
 //        findOccurence(str, 0, element);
 // }
 
-// To check the array is sorted (strictly increasing)
-public static boolean isSorted(int idx , int arr[]){
-    if(idx == arr.length-1){
-        return true;
-    }
-    if(arr[idx]<arr[idx+1]){
-         return isSorted(idx+1, arr);
-    }else{
-        return false;
-    }
-}
-public static void main(String args[]){
-    int arr[] = {1,2,3};
-    System.out.println(isSorted(0, arr));
-}
+// // To check the array is sorted (strictly increasing)
+// public static boolean isSorted(int idx , int arr[]){
+//     if(idx == arr.length-1){
+//         return true;
+//     }
+//     if(arr[idx]<arr[idx+1]){
+//          return isSorted(idx+1, arr);
+//     }else{
+//         return false;
+//     }
+// }
+// public static void main(String args[]){
+//     int arr[] = {1,2,3};
+//     System.out.println(isSorted(0, arr));
+// }
 
-// To move all 'x' to the end of string
-public static void MoveallX(String str , int idx ,int count ,String newstring){
-    if(idx == str.length()){
-        for(int i=0;i<count;i++){
-            newstring += 'x';
-        }
-        System.out.println(newstring);
-        return;
-    }
-    char currchar = str.charAt(idx);
-    if(currchar == 'x'){
-        count++;
-        MoveallX(str, idx+1, count, newstring);
-    }else{
-        newstring += currchar;
-        MoveallX(str, idx+1, count, newstring);
-    }
-}
-public static void main(String args[]){
-    String str = "axbcxxd";
-    MoveallX(str, 0, 0, "");
-}
+// // To move all 'x' to the end of string
+// public static void MoveallX(String str , int idx ,int count ,String newstring){
+//     if(idx == str.length()){
+//         for(int i=0;i<count;i++){
+//             newstring += 'x';
+//         }
+//         System.out.println(newstring);
+//         return;
+//     }
+//     char currchar = str.charAt(idx);
+//     if(currchar == 'x'){
+//         count++;
+//         MoveallX(str, idx+1, count, newstring);
+//     }else{
+//         newstring += currchar;
+//         MoveallX(str, idx+1, count, newstring);
+//     }
+// }
+// public static void main(String args[]){
+//     String str = "axbcxxd";
+//     MoveallX(str, 0, 0, "");
+// }
