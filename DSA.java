@@ -249,3 +249,22 @@
 //     String str = "axbcxxd";
 //     MoveallX(str, 0, 0, "");
 // }
+
+// print keypad combinations
+public static String keypad[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+public static void printcomb(String str , int idx , String combination){
+    if(idx == str.length()){
+        System.out.println(combination);
+        return;
+    }
+    char currchar = str.charAt(idx);
+    int digit = currchar - '0';
+    String mapping = keypad[digit];
+    for(int i=0;i<mapping.length();i++){
+        printcomb(str, idx+1, combination + mapping.charAt(i));
+    }
+}
+public static void main(String args[]){
+    String str = "23";
+    printcomb(str, 0, "");
+}
