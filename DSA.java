@@ -251,6 +251,8 @@
 // }
 
 // print keypad combinations
+public class DSA {
+
 public static String keypad[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 public static void printcomb(String str , int idx , String combination){
     if(idx == str.length()){
@@ -267,4 +269,6 @@ public static void printcomb(String str , int idx , String combination){
 public static void main(String args[]){
     String str = "23";
     printcomb(str, 0, "");
+}
+ 
 }

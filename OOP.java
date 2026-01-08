@@ -1,4 +1,5 @@
 // //wap to show the use of this keyword
+
 // class Person {
 //     String name;
 //     int age;
@@ -25,7 +26,9 @@
 //     }
 // }
 
+
 // //wap to show the all types of inheritance
+
 // class Animal {
 //     void eat() {
 //         System.out.println("This animal eats food.");
@@ -50,3 +53,23 @@
 //     }
 // }
 
+
+// Program to show the implementation of polymorphism also method overloading & method overriding
+public class OOP{
+    //method overloading 
+    public static int poly(int a , int b){
+        return a+b;
+    }
+
+    public static int poly(int a){
+        int b = a*a;
+        return b;
+    }
+    
+    public static void main(String[] args) {
+        OOP p1 = new OOP();
+       System.out.println(p1.poly(5)); 
+       System.out.println(p1.poly(5,7)); 
+
+    }
+}
