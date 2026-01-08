@@ -3,13 +3,11 @@
 // class Person {
 //     String name;
 //     int age;
-
 //     // Constructor using 'this' keyword to differentiate between instance variables and parameters
 //     Person(String name, int age) {
 //         this.name = name; // 'this.name' refers to the instance variable, 'name' refers to the parameter
 //         this.age = age;   // 'this.age' refers to the instance variable, 'age' refers to the parameter
 //     }
-
 //     // Method to display person's details
 //     void display() {
 //         System.out.println("Name: " + this.name); // Using 'this' to refer to instance variable
@@ -54,22 +52,20 @@
 // }
 
 
-// Program to show the implementation of polymorphism also method overloading & method overriding
-public class OOP{
-    //method overloading 
-    public static int poly(int a , int b){
-        return a+b;
-    }
+// // Program to show the implementation of polymorphism also method overloading & method overriding
+// public class OOP{
+//     //method overloading 
+//     public static int poly(int a , int b){
+//         return a+b;
+//     }
+//     public static int poly(int a){
+//         int b = a*a;
+//         return b;
+//     }
+//     public static void main(String[] args) {
+//         OOP p1 = new OOP();
+//        System.out.println(p1.poly(5)); 
+//        System.out.println(p1.poly(5,7)); 
 
-    public static int poly(int a){
-        int b = a*a;
-        return b;
-    }
-    
-    public static void main(String[] args) {
-        OOP p1 = new OOP();
-       System.out.println(p1.poly(5)); 
-       System.out.println(p1.poly(5,7)); 
-
-    }
-}
+//     }
+// }
