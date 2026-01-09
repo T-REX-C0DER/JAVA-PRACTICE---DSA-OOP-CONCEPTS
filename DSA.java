@@ -23,28 +23,31 @@
 //                       System.out.println(arr[i]);
 //               }
 //        }
+public class DSA {
+    public static void SelectionSort(){
+            int arr[] = {1,34,53,2,544,34,57,5};
 
-//     public static void SelectionSort(){
-//             int arr[] = {1,34,53,2,544,34,57,5};
+              for(int i = 0 ; i<arr.length-1 ; i++){
+                    int smallest =i;
+                         for(int j = i+1 ; j<arr.length; j++){
+                               if(arr[smallest]>arr[j]){
+                                      smallest=j;
+                               }
+                         }
+                    int temp = arr[smallest];
+                    arr[smallest] = arr[i];
+                    arr[i] = temp;
+              }
 
-//               for(int i = 0 ; i<arr.length-1 ; i++){
-//                     int smallest =i;
-//                          for(int j = i+1 ; j<arr.length; j++){
-//                                if(arr[smallest]>arr[j]){
-//                                       smallest=j;
-//                                }
-//                          }
-//                     int temp = arr[smallest];
-//                     arr[smallest] = arr[i];
-//                     arr[i] = temp;
-//               }
-
-//               //printing 
-//               for(int i = 0 ; i<=arr.length ; i++){
-//                       System.out.println(arr[i]);
-//               }
-//        }
-
+              //printing 
+              for(int i = 0 ; i<=arr.length ; i++){
+                      System.out.println(arr[i]);
+              }
+       }
+       public static void main(String[] args) {
+                SelectionSort();
+       }
+    }
        
 //        public static void InsertionSort(){
         
@@ -250,25 +253,24 @@
 //     MoveallX(str, 0, 0, "");
 // }
 
-// print keypad combinations
-public class DSA {
+// // print keypad combinations
+// public class DSA {
 
-public static String keypad[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
-public static void printcomb(String str , int idx , String combination){
-    if(idx == str.length()){
-        System.out.println(combination);
-        return;
-    }
-    char currchar = str.charAt(idx);
-    int digit = currchar - '0';
-    String mapping = keypad[digit];
-    for(int i=0;i<mapping.length();i++){
-        printcomb(str, idx+1, combination + mapping.charAt(i));
-    }
-}
-public static void main(String args[]){
-    String str = "23";
-    printcomb(str, 0, "");
-}
- 
-}
+// public static String keypad[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+// public static void printcomb(String str , int idx , String combination){
+//     if(idx == str.length()){
+//         System.out.println(combination);
+//         return;
+//     }
+//     char currchar = str.charAt(idx);
+//     int digit = currchar - '0';
+//     String mapping = keypad[digit];
+//     for(int i=0;i<mapping.length();i++){
+//         printcomb(str, idx+1, combination + mapping.charAt(i));
+//     }
+// }
+// public static void main(String args[]){
+//     String str = "23";
+//     printcomb(str, 0, "");
+// }
+// }
