@@ -69,3 +69,26 @@
 
 //     }
 // }
+
+
+// Method Overriding
+
+class car{
+    void engine(){
+        System.out.println("car engine");
+    }
+}
+
+class Mercedes extends car{
+    @Override
+    void engine(){
+        System.out.println("Mercedes engine");
+    }
+}
+
+public class OOP{
+    public static void main(String[] args) {
+        car c = new Mercedes();
+        c.engine();
+    }
+}
