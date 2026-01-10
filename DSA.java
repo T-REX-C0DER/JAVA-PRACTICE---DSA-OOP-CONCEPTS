@@ -23,31 +23,31 @@
 //                       System.out.println(arr[i]);
 //               }
 //        }
-public class DSA {
-    public static void SelectionSort(){
-            int arr[] = {1,34,53,2,544,34,57,5};
+// public class DSA {
+//     public static void SelectionSort(){
+//             int arr[] = {1,34,53,2,544,34,57,5};
 
-              for(int i = 0 ; i<arr.length-1 ; i++){
-                    int smallest =i;
-                         for(int j = i+1 ; j<arr.length; j++){
-                               if(arr[smallest]>arr[j]){
-                                      smallest=j;
-                               }
-                         }
-                    int temp = arr[smallest];
-                    arr[smallest] = arr[i];
-                    arr[i] = temp;
-              }
+//               for(int i = 0 ; i<arr.length-1 ; i++){
+//                     int smallest =i;
+//                          for(int j = i+1 ; j<arr.length; j++){
+//                                if(arr[smallest]>arr[j]){
+//                                       smallest=j;
+//                                }
+//                          }
+//                     int temp = arr[smallest];
+//                     arr[smallest] = arr[i];
+//                     arr[i] = temp;
+//               }
 
-              //printing 
-              for(int i = 0 ; i<=arr.length ; i++){
-                      System.out.println(arr[i]);
-              }
-       }
-       public static void main(String[] args) {
-                SelectionSort();
-       }
-    }
+//               //printing 
+//               for(int i = 0 ; i<=arr.length ; i++){
+//                       System.out.println(arr[i]);
+//               }
+//        }
+//        public static void main(String[] args) {
+//                 SelectionSort();
+//        }
+//     }
        
 //        public static void InsertionSort(){
         
@@ -274,3 +274,23 @@ public class DSA {
 //     printcomb(str, 0, "");
 // }
 // }
+
+
+// To print all permutations of a string
+public class DSA {
+      public static void printperm(String str , String perm){
+            if(str.length() == 0){
+                  System.out.println(perm);
+                  return;
+            }
+            for(int i=0;i<str.length();i++){
+                  char currchar = str.charAt(i);
+                  String newstr = str.substring(0, i) + str.substring(i+1);
+                  printperm(newstr, perm + currchar);
+            }
+      }
+      public static void main(String args[]){
+            String str = "abc";
+            printperm(str, "");
+      }
+      }
