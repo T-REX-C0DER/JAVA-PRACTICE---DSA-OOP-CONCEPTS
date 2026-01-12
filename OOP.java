@@ -110,54 +110,54 @@ import java.util.ArrayList;
 //     }
 // }
 
-// program to show encapsulation in oops
-class Student{
-    private String name;
-    private int age;
+// // program to show encapsulation in oops
+// class Student{
+//     private String name;
+//     private int age;
 
-    //getter method for name
-    public String getName(){
-        return name;
-    }
+//     //getter method for name
+//     public String getName(){
+//         return name;
+//     }
 
-    //setter method for name
-    public void setName(String name){
-        this.name = name;
-    }
+//     //setter method for name
+//     public void setName(String name){
+//         this.name = name;
+//     }
 
-    //getter method for age
-    public int getAge(){
-        return age;
-    }
+//     //getter method for age
+//     public int getAge(){
+//         return age;
+//     }
 
-    //setter method for age
-    public void setAge(int age){
-        if(age>0){
-            this.age = age;
-        }else{
-            System.out.println("Invalid age");
-        }
-    }
-}
-public class OOP{
-    public static void main(String[] args) {
-        Student s = new Student();
-        s.setName("Sanjay");
-        s.setAge(21);
+//     //setter method for age
+//     public void setAge(int age){
+//         if(age>0){
+//             this.age = age;
+//         }else{
+//             System.out.println("Invalid age");
+//         }
+//     }
+// }
+// public class OOP{
+//     public static void main(String[] args) {
+//         Student s = new Student();
+//         s.setName("Sanjay");
+//         s.setAge(21);
 
-        System.out.println("Name: " + s.getName());
-        System.out.println("Age: " + s.getAge());
-    }
-}
+//         System.out.println("Name: " + s.getName());
+//         System.out.println("Age: " + s.getAge());
+//     }
+// }
 
-// program to show use of arraylist in java
-// import java.util.ArrayList;                                                                  
-public class OOP{
-    public static void main(String[] args) {
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(10);
-        list.add(20);
-        list.add(30);   
-        System.out.println("ArrayList: " + list);
-    }
-}
+// // program to show use of arraylist in java
+// // import java.util.ArrayList;                                                                  
+// public class OOP{
+//     public static void main(String[] args) {
+//         ArrayList<Integer> list = new ArrayList<>();
+//         list.add(10);
+//         list.add(20);
+//         list.add(30);   
+//         System.out.println("ArrayList: " + list);
+//     }
+// }
