@@ -71,24 +71,40 @@
 // }
 
 
-// Method Overriding
+// // Method Overriding
 
-class car{
-    void engine(){
-        System.out.println("car engine");
-    }
-}
+// class car{
+//     void engine(){
+//         System.out.println("car engine");
+//     }
+// }
 
-class Mercedes extends car{
-    @Override
-    void engine(){
-        System.out.println("Mercedes engine");
-    }
-}
+// class Mercedes extends car{
+//     @Override
+//     void engine(){
+//         System.out.println("Mercedes engine");
+//     }
+// }
 
-public class OOP{
-    public static void main(String[] args) {
-        car c = new Mercedes();
-        c.engine();
-    }
-}
+// public class OOP{
+//     public static void main(String[] args) {
+//         car c = new Mercedes();
+//         c.engine();
+//     }
+// }
+
+// // program to show abstraction anf getters , setters in oops
+// abstract class bike{
+//     abstract void run();
+// }
+// class Honda extends bike{
+//     void run(){
+//         System.out.println("Honda bike is running");
+//     }
+// }
+// public class OOP{
+//     public static void main(String[] args) {
+//         bike b = new Honda();
+//         b.run();
+//     }
+// }
