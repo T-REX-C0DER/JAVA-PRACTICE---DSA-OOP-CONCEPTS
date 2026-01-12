@@ -165,29 +165,29 @@
 //     }
 // }
 
-// code for abstarct class and interface
-abstract class Animal {
-    abstract void sound();
-}
+// // code for abstarct class and interface
+// abstract class Animal {
+//     abstract void sound();
+// }
 
-class Dog extends Animal {
-    void sound() {
-        System.out.println("The dog barks.");
-    }
-}
+// class Dog extends Animal {
+//     void sound() {
+//         System.out.println("The dog barks.");
+//     }
+// }
 
-class Cat extends Animal {
-    void sound() {
-        System.out.println("The cat meows.");
-    }
-}
+// class Cat extends Animal {
+//     void sound() {
+//         System.out.println("The cat meows.");
+//     }
+// }
 
-public class BASIC {
-    public static void main(String[] args) {
-        Animal myDog = new Dog();
-        Animal myCat = new Cat();
+// public class BASIC {
+//     public static void main(String[] args) {
+//         Animal myDog = new Dog();
+//         Animal myCat = new Cat();
 
-        myDog.sound();
-        myCat.sound();
-    }
-}
+//         myDog.sound();
+//         myCat.sound();
+//     }
+// }
