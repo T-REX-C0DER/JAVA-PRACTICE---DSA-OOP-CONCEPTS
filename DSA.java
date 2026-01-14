@@ -296,25 +296,25 @@
 //       }
 
 
-// BackTracking permutation of a string
-public class DSA {
-        public static void printperm(String str , String perm , boolean freq[]){
-                if(str.length() == perm.length()){
-                    System.out.println(perm);
-                    return;
-                }
-                for(int i=0;i<str.length();i++){
-                    if(!freq[i]){
-                            freq[i] = true;
-                            char currchar = str.charAt(i);
-                            printperm(str, perm + currchar, freq);
-                            freq[i] = false;
-                    }
-                }
-        }
-        public static void main(String args[]){
-                String str = "abc";
-                boolean freq[] = new boolean[str.length()];
-                printperm(str, "", freq);
-        }
-}
+// // BackTracking permutation of a string
+// public class DSA {
+//         public static void printperm(String str , String perm , boolean freq[]){
+//                 if(str.length() == perm.length()){
+//                     System.out.println(perm);
+//                     return;
+//                 }
+//                 for(int i=0;i<str.length();i++){
+//                     if(!freq[i]){
+//                             freq[i] = true;
+//                             char currchar = str.charAt(i);
+//                             printperm(str, perm + currchar, freq);
+//                             freq[i] = false;
+//                     }
+//                 }
+//         }
+//         public static void main(String args[]){
+//                 String str = "abc";
+//                 boolean freq[] = new boolean[str.length()];
+//                 printperm(str, "", freq);
+//         }
+// }
