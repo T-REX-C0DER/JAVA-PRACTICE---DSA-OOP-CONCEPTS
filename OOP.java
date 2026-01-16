@@ -161,3 +161,28 @@ import java.util.ArrayList;
 //         System.out.println("ArrayList: " + list);
 //     }
 // }
+
+// program to show use of super keyword in java
+class Animal{
+    void eat(){
+        System.out.println("Animal is eating");
+    }
+}
+class Dog extends Animal{
+    void bark(){
+        System.out.println("Dog is barking");
+    }
+    void eat(){
+        System.out.println("Dog is eating");
+    }
+    void display(){
+        super.eat(); // calling parent class method
+        bark();      // calling current class method
+    }
+}
+public class OOP{
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.display();
+    }
+}
