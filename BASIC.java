@@ -164,8 +164,3 @@
 //         } while (k <= 5);
 //     }
 // }
-
-// // code for abstarct class and interface
-// abstract class Animal {
-//     abstract void sound();
-// }
