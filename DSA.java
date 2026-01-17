@@ -417,6 +417,8 @@
 
 // Single Linked List 
 
+import java.util.LinkedList;
+
 class Node { // node struct
     String data;
     Node next;
@@ -427,7 +429,7 @@ class Node { // node struct
     }
 }
 
-class DSA {
+class SLL {
     Node  head ;
 
     // Insertion at beginning 
@@ -492,5 +494,25 @@ class DSA {
             temp = temp.next;
         }
         System.out.println("null");
+    }
+}
+
+public class DSA{
+    public static void main(String[] args) {
+        SLL list = new SLL();
+
+        list.AtBegining("C");
+        list.AtBegining("B");
+        list.AtBegining("A");
+        list.AtEnd("D");
+        list.AtEnd("E");
+
+        list.Display();
+
+        list.deletefrombeg();
+        list.Display();
+
+        list.deletefromend();
+        list.Display();
     }
 }
