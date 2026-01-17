@@ -452,4 +452,14 @@ class DSA {
         }
         temp.next = newnNode;
     }
+
+    // Func dor deletion at beginning
+    void  deletefrombeg(){
+        if(head == null ){
+            System.out.println("The list is empty");
+            return;
+        }
+        head = head.next;
+        System.out.println("Deleted from beginning ");
+    }
 }
