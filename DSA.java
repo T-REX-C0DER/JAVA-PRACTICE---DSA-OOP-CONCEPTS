@@ -462,4 +462,23 @@ class DSA {
         head = head.next;
         System.out.println("Deleted from beginning ");
     }
+
+    // Func for deletion at end 
+    void deletefromend(){
+        if(head == null ){
+            System.out.println("The list is empty");
+            return;
+        }
+
+        if(head.next == null){
+            head = null;
+        }else{
+            Node temp = head;
+            while(temp.next.next != null ){
+                temp = temp.next;
+            }
+            temp.next = null;
+        }
+        System.out.println("Deleted from end ");
+    }
 }
