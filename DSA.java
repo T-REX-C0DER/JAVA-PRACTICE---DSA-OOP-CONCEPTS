@@ -437,5 +437,19 @@ class DSA {
         head = newnode;
     }
 
-    
+    // Insertion at end
+
+    void AtEnd(String data){
+        Node newnNode = new Node(data);
+        if(head == null ){
+            System.out.println("The list is empty");
+            return;
+        }
+
+        Node temp = head;
+        while(temp.next != null ){
+            temp = temp.next;
+        }
+        temp.next = newnNode;
+    }
 }
