@@ -427,3 +427,15 @@ class Node { // node struct
     }
 }
 
+class DSA {
+    Node  head ;
+
+    // Insertion at beginning 
+    void AtBegining(String data){
+        Node newnode = new Node(data);
+        newnode.next = head;
+        head = newnode;
+    }
+
+    
+}
