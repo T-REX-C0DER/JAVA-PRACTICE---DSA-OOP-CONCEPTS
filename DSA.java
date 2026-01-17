@@ -481,4 +481,16 @@ class DSA {
         }
         System.out.println("Deleted from end ");
     }
+
+    // Display func
+    void Display(){
+        Node temp = head;
+        System.out.println("Linked List is : ");
+
+        while(temp != null ){
+            System.out.println(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
 }
