@@ -417,102 +417,102 @@
 
 // Single Linked List 
 
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
-class Node { // node struct
-    String data;
-    Node next;
+// class Node { // node struct
+//     String data;
+//     Node next;
 
-    Node(String data){
-        this.data = data;
-        this.next = null;
-    }
-}
+//     Node(String data){
+//         this.data = data;
+//         this.next = null;
+//     }
+// }
 
-class SLL {
-    Node  head ;
+// class SLL {
+//     Node  head ;
 
-    // Insertion at beginning 
-    void AtBegining(String data){
-        Node newnode = new Node(data);
-        newnode.next = head;
-        head = newnode;
-    }
+//     // Insertion at beginning 
+//     void AtBegining(String data){
+//         Node newnode = new Node(data);
+//         newnode.next = head;
+//         head = newnode;
+//     }
 
-    // Insertion at end
+//     // Insertion at end
 
-    void AtEnd(String data){
-        Node newnNode = new Node(data);
-        if(head == null ){
-            System.out.println("The list is empty");
-            return;
-        }
+//     void AtEnd(String data){
+//         Node newnNode = new Node(data);
+//         if(head == null ){
+//             System.out.println("The list is empty");
+//             return;
+//         }
 
-        Node temp = head;
-        while(temp.next != null ){
-            temp = temp.next;
-        }
-        temp.next = newnNode;
-    }
+//         Node temp = head;
+//         while(temp.next != null ){
+//             temp = temp.next;
+//         }
+//         temp.next = newnNode;
+//     }
 
-    // Func dor deletion at beginning
-    void  deletefrombeg(){
-        if(head == null ){
-            System.out.println("The list is empty");
-            return;
-        }
-        head = head.next;
-        System.out.println("Deleted from beginning ");
-    }
+//     // Func dor deletion at beginning
+//     void  deletefrombeg(){
+//         if(head == null ){
+//             System.out.println("The list is empty");
+//             return;
+//         }
+//         head = head.next;
+//         System.out.println("Deleted from beginning ");
+//     }
 
-    // Func for deletion at end 
-    void deletefromend(){
-        if(head == null ){
-            System.out.println("The list is empty");
-            return;
-        }
+//     // Func for deletion at end 
+//     void deletefromend(){
+//         if(head == null ){
+//             System.out.println("The list is empty");
+//             return;
+//         }
 
-        if(head.next == null){
-            head = null;
-        }else{
-            Node temp = head;
-            while(temp.next.next != null ){
-                temp = temp.next;
-            }
-            temp.next = null;
-        }
-        System.out.println("Deleted from end ");
-    }
+//         if(head.next == null){
+//             head = null;
+//         }else{
+//             Node temp = head;
+//             while(temp.next.next != null ){
+//                 temp = temp.next;
+//             }
+//             temp.next = null;
+//         }
+//         System.out.println("Deleted from end ");
+//     }
 
-    // Display func
-    void Display(){
-        Node temp = head;
-        System.out.println("Linked List is : ");
+//     // Display func
+//     void Display(){
+//         Node temp = head;
+//         System.out.println("Linked List is : ");
 
-        while(temp != null ){
-            System.out.println(temp.data + "->");
-            temp = temp.next;
-        }
-        System.out.println("null");
-    }
-}
+//         while(temp != null ){
+//             System.out.println(temp.data + "->");
+//             temp = temp.next;
+//         }
+//         System.out.println("null");
+//     }
+// }
 
-public class DSA{
-    public static void main(String[] args) {
-        SLL list = new SLL();
+// public class DSA{
+//     public static void main(String[] args) {
+//         SLL list = new SLL();
 
-        list.AtBegining("C");
-        list.AtBegining("B");
-        list.AtBegining("A");
-        list.AtEnd("D");
-        list.AtEnd("E");
+//         list.AtBegining("C");
+//         list.AtBegining("B");
+//         list.AtBegining("A");
+//         list.AtEnd("D");
+//         list.AtEnd("E");
 
-        list.Display();
+//         list.Display();
 
-        list.deletefrombeg();
-        list.Display();
+//         list.deletefrombeg();
+//         list.Display();
 
-        list.deletefromend();
-        list.Display();
-    }
-}
+//         list.deletefromend();
+//         list.Display();
+//     }
+// }
