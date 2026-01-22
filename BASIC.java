@@ -185,3 +185,30 @@
 //         }
 //     }
 // }
+
+// Program to show the functions in Java
+ public class BASIC {
+    // Function to add two numbers
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Function to subtract two numbers
+    static int subtract(int a, int b) {
+        return a - b;
+    }
+
+    // Main method
+    public static void main(String[] args) {
+        int num1 = 15;
+        int num2 = 10;
+
+        // Calling the add function
+        int sum = add(num1, num2);
+        System.out.println("Sum: " + sum);
+
+        // Calling the subtract function
+        int difference = subtract(num1, num2);
+        System.out.println("Difference: " + difference);
+    }
+}
