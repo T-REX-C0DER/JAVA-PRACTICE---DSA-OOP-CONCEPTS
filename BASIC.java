@@ -166,22 +166,22 @@
 // }
 
 
-// Program to show the array in Java
- public class BASIC {
-    public static void main(String[] args) {
-        // Declare and initialize an array
-        int[] numbers = {10, 20, 30, 40, 50};
+// // Program to show the array in Java
+//  public class BASIC {
+//     public static void main(String[] args) {
+//         // Declare and initialize an array
+//         int[] numbers = {10, 20, 30, 40, 50};
 
-        // Accessing array elements using a for loop
-        System.out.println("Array elements:");
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println("Element at index " + i + ": " + numbers[i]);
-        }
+//         // Accessing array elements using a for loop
+//         System.out.println("Array elements:");
+//         for (int i = 0; i < numbers.length; i++) {
+//             System.out.println("Element at index " + i + ": " + numbers[i]);
+//         }
 
-        // Using enhanced for loop to iterate through the array
-        System.out.println("\nUsing enhanced for loop:");
-        for (int num : numbers) {
-            System.out.println("Element: " + num);
-        }
-    }
-}
+//         // Using enhanced for loop to iterate through the array
+//         System.out.println("\nUsing enhanced for loop:");
+//         for (int num : numbers) {
+//             System.out.println("Element: " + num);
+//         }
+//     }
+// }
