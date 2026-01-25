@@ -57,7 +57,6 @@ Hashing
 Trees (Basics)
 
 🧠 Learning Approach
-
 Concepts are explained using simple and clean Java code
 Programs are written with beginner-friendly logic
 Each topic focuses on clarity + practical usage
