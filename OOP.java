@@ -205,3 +205,25 @@
 //         return new int[]{}; // will never hit because exactly one solution exists
 //     }
 // }
+
+
+// Multithreading in Java
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Thread: " + i);
+            try {   
+                Thread.sleep(500); // Sleep for 500 milliseconds
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class OOP {
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.start(); // Start the thread
+    }
+}   
