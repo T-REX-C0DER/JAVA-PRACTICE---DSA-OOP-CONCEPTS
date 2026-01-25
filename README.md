@@ -11,7 +11,6 @@ Improve logical thinking and coding confidence
 Prepare for coding interviews 
 
 🛠 Tech Stack
-
 Language: Java
 IDE: VS Code / IntelliJ IDEA / Eclipse
 Version Control: Git & GitHub
