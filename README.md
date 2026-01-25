@@ -8,7 +8,7 @@ Build a strong core in Java programming
 Master OOP principles with practical examples
 Learn and implement DSA concepts from scratch
 Improve logical thinking and coding confidence
-Prepare for coding interviews & competitive programming
+Prepare for coding interviews 
 
 🛠 Tech Stack
 
