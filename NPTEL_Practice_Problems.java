@@ -53,11 +53,27 @@ import java.util.*;
 //     public static void main(String[] strings) {
 //           Scanner in = new Scanner(System.in);
 //           int number = in.nextInt();
-
 //           for(int i = 1 ; i < 6 ; i++){
 //             System.out.printf("%d * %d = %d \n" , number , i , number*i);
 //           }
-
 //           in.close();
 //     }
 // }
+
+
+public class NPTEL_Practice_Problems {
+    public static void main(String[] strings) {
+          Scanner in = new Scanner(System.in);
+          
+          int x = in.nextInt();
+          int y = in.nextInt();
+
+          int quotient = x/y;
+          int remainder = x%y;
+
+          System.out.println(("The Quotient is = " + quotient));
+          System.out.println(("The remainder is = " + remainder));
+
+          in.close();
+    }
+}
